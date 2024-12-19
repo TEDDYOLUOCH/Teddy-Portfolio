@@ -74,7 +74,7 @@ header a:hover {
     120deg, 
     rgba(0, 0, 0, 0.3), /* Lighter overlay */
     rgba(0, 0, 0, 0.1)
-  ), url(../IMAGES/istockphoto-1412282189-1024x1024.jpg) no-repeat center center/cover;
+  ), url(istockphoto-1412282189-1024x1024.jpg) no-repeat center center/cover;
   padding: 120px 20px;
   text-align: center;
   color: var(--text-color-light);
@@ -240,7 +240,7 @@ button.send:hover {
 /* Skills Section */
 #skills {
   padding: 80px 20px;
-  background: url(../IMAGES/istockphoto-1480633240-1024x1024.jpg) no-repeat center center/cover;
+  background: url(istockphoto-1480633240-1024x1024.jpg) no-repeat center center/cover;
   text-align: center;
 }
 
