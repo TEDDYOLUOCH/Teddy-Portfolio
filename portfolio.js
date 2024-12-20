@@ -23,6 +23,8 @@ function loadMessages() {
     });
   }
 }
+// Select the form element
+const contactForm = document.querySelector('#contact-form');
 
 // Event Listener for Form Submission
 contactForm.addEventListener('submit', (e) => {
@@ -33,10 +35,24 @@ contactForm.addEventListener('submit', (e) => {
   const email = document.querySelector('#email').value;
   const message = document.querySelector('#message').value;
 
-  // Retrieve existing entries or initialize an empty array
-  const entries = JSON.parse(localStorage.getItem('contactMessages')) || [];
+  // Validate form fields
+  if (!name || !email || !message) {
+    alert("Please fill in all fields.");
+    return; // Stop the form submission if any field is empty
+  }
 
-  // Add the new message to the entries array
+  // Construct the mailto link
+  const subject = `New Contact Form Submission from ${name}`;
+  const body = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+  const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  // Redirect the user to the mailto link to open their email client
+  window.location.href = mailtoLink;
+
+  // Clear the form fields after submission
+  contactForm.reset();
+});
+
   entries.push({
     name,
     email,
