@@ -1,99 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal portfolio website showcasing my skills, projects, achievements, and more.">
+    <meta name="author" content="Your Name">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about" aria-label="About Section">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li> <!-- New Link to Achievements -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Teddy Oluoch, a passionate web developer.</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Discover my skills, achievements, and the projects I have worked on.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="../MY PORTFOLIO/WhatsApp Image 2024-11-07 at 19.49.49_38600ed6.jpg" alt="Profile Photo" class="profile-photo">
+        <p>My name is Teddy Oluoch, an IT field professor and engineer specializing in Networking, Cybersecurity, and Fullstack Development. I am passionate about exploring various fields within IT to ensure that I am always equipped to tackle computational problems..</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="../IMAGES/Screenshot 2024-10-18 175656.png" alt="Screenshot of A Shop System project" class="project-image" alt="Project 1">
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="../MY PORTFOLIO/Screenshot 2024-12-20 120821.png" alt="Project 2">
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+      <h2>Achievements</h2>
+
+      <!-- Achievement 1 -->
+      <div class="achievement-card">
+          <h3>C++ and Data Structure and Algorithm</h3>
+          <p>This award was given for excellence in problem-solving and programming.</p>
+          <a href="C:\Users\ADMIN\Desktop\MY PORTFOLIO\Z1xDgnN.pdf" target="_blank" class="certificate-link">
+              <p>View Certificate (PDF)</p>
+          </a>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="achievement-card">
+          <h3>Introduction to Data visualization using python and seaborn BootCamp</h3>
+          <p>This certification recognized my expertise in data analysis using python and Seaborn.</p>
+          <a href="C:\Users\ADMIN\Desktop\MY PORTFOLIO\Z1T5f72.pdf" target="_blank" class="certificate-link">
+              <p>View Certificate (PDF)</p>
+          </a>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="achievement-card">
+          <h3>Javascript and react.js</h3>
+          <p>I attended a BootCamp training and got knowledge on Javascript and react.js of which i can engage in problem-solving .</p>
+          <a href="C:\Users\ADMIN\Desktop\MY PORTFOLIO\Z2tiLpo.pdf" target="_blank" class="certificate-link">
+              <p>View Certificate (PDF)</p>
+          </a>
+      </div>
+
+      <!-- Achievement 4 -->
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <img src="WhatsApp Image 2024-11-07 at 19.49.49_38600ed6.jpg" alt="Your Profile Photo" class="profile-photo">
-    <h2>About Me</h2>
-    <p>My name is Teddy Oluoch, an IT field professor and engineer specializing in Networking, Cybersecurity, and Fullstack Development. I am passionate about exploring various fields within IT to ensure that I am always equipped to tackle computational problems.</p>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>A Shop System</h3>
-      <img src="../IMAGES/Screenshot 2024-10-18 175656.png" alt="Screenshot of A Shop System project" class="project-image">
-
-      <p>This project involves creating a system to manage goods and services, offering appointment booking and preparation management features.</p>
-      <a href="https://github.com" target="_blank" title="View on GitHub">View Project</a>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit" class="send">Send</button>
-    </form>
-
-    <!-- Display Saved Messages -->
-    <div id="saved-messages">
-      <h3>Saved Messages</h3>
-      <ul id="message-list"></ul>
-    </div>
-
-    <!-- Clear Storage Button -->
-    <button id="clear-storage">Clear Messages</button>
-  </section>
-
-  <!-- Link the external JavaScript file -->
-  <script src="portfolio.js"></script>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 My Portfolio</p>
-    <div>
-      <a href="https://github.com" target="_blank" title="GitHub Profile">GitHub</a>
-      <a href="https://linkedin.com" target="_blank" title="LinkedIn Profile">LinkedIn</a>
-      <!-- Add more social links as needed -->
-    </div>
-
-  </footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
